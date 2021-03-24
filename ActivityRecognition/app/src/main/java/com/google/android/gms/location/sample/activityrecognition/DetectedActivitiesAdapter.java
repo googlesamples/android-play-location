@@ -17,8 +17,8 @@
 package com.google.android.gms.location.sample.activityrecognition;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -61,7 +61,7 @@ class DetectedActivitiesAdapter extends ArrayAdapter<DetectedActivity> {
 
         // Populate widgets with values.
         if (detectedActivity != null) {
-            activityName.setText(Constants.getActivityString(getContext(),
+            activityName.setText(Utils.getActivityString(getContext(),
                     detectedActivity.getType()));
 
             activityConfidenceLevel.setText(getContext().getString(R.string.percent,
